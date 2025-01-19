@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- attribute name and attribute value -->
+    <input
+      type="text"
+      id="username"
+      placeholder="username"
+      style="background-color: blue; font-size: 20px"
+    />
+
+    <script>
+      let inputBox = document.getElementById("username");
+      // returns the inline css available on the element
+      console.log(inputBox.style);
+      // displays blue
+      console.log(inputBox.style.backgroundColor);
+      // setting new css property
+      inputBox.style.padding="10px"
+      console.log(inputBox);
+    </script>
+  </body>
+</html>

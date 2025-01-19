@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        background-color: red;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- attribute name and attribute value -->
+    <input type="text" id="username" placeholder="username" />
+
+    <script>
+      let inputBox = document.getElementById("username");
+      // window.getComputedStyle(element,psuedoElement)
+      // fontSize im simply addint but usally only inputBox enough
+      console.log(window.getComputedStyle(inputBox).fontSize);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="title"><p>Welcome to GreatStack 1</p><p>Welcome to GreatStack 2</p><p>Welcome to GreatStack 3</p><p>Welcome to GreatStack 4</p></div>
+
+  <script>
+    let parent = document.querySelector(".title")
+    // this displays # text in console because after opening tag of title we have some empty space before first p elemen
+    // if i removed this extra space and placed them next to each other, itll show me the first p element
+    console.log(parent.firstChild);
+    // now i want to keep the space but still get the first p element ; next line prints that
+    console.log(parent.firstElementChild);
+    // this prints welcome to greatstack 4
+    console.log(parent.lastElementChild);
+    // in the console itll give me text and p
+    // if i remove the spaces itll only give me 4ps (an array)
+    console.log(parent.childNodes);
+  </script>
+</body>
+
+</html>

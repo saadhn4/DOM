@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <h1 class="message">first heading</h1>
+    <div id="container">
+      <h1 class="message">second heading</h1>
+      <h1 class="message">third heading</h1>
+    </div>
+  </div>
+
+  <script>
+    let msg= document.querySelector(".message")
+    console.log(msg);
+
+    let allMsg= document.querySelectorAll(".message")
+    console.log(allMsg); 
+    // you can use query selector on any other element also
+
+    let cont= document.getElementById("container")
+    let contMsg = cont.querySelector(".message")
+    console.log(contMsg);
+
+  </script>
+</body>
+
+</html>

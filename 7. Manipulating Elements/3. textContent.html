@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul id="menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Blog</li>
+    <li style="display: none">Project</li>
+  </ul>
+
+  <script>
+    let menu = document.getElementById("menu")
+    // this gives the entire list in console
+    console.log(menu);
+    // this prints Home About Blog Projects
+    console.log(menu.textContent);
+    // this also prints Home About Blog Projects (this follows css also so it wont show me project)
+    console.log(menu.innerText);
+    // this only shows Helli in the webpage itself (list is gone)
+    menu.textContent="Hello";
+  </script>
+</body>
+
+</html>

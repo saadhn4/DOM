@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- attribute name and attribute value -->
+    <input
+      type="text"
+      id="username"
+      placeholder="username"
+      style="background-color: blue; font-size: 20px"
+    />
+
+    <script>
+      let inputBox = document.getElementById("username");
+      // this will overwrite inline css btw like now theres no background color and font size, only a width of 200px
+
+      //if you wanna keep both u need to concat (simply add + before =)
+      // using css text u can add multiple properties
+      inputBox.style.cssText += "width: 200px; height: 100px";
+      console.log(inputBox);
+      console.log(inputBox.style.width);
+    </script>
+  </body>
+</html>

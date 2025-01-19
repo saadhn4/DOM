@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- beforebegin -->
+  <ul id="menu">
+    <!-- afterbegin -->
+    <li>Home</li>
+    <li>About</li>
+    <li>Blog</li>
+    <li style="display: none">Project</li>
+    <!-- beforeend -->
+  </ul>
+  <h1>Hello</h1>
+  <!-- afterend -->
+
+  <script>
+    let menu = document.getElementById("menu")
+    // this shows <ul id="menu"></ul>
+    let newNode = menu.cloneNode()
+    // false is default
+    let newNode2 = menu.cloneNode(true)
+    console.log(newNode);
+    // this prints the items as well
+    console.log(newNode2);
+  </script>
+</body>
+
+</html>

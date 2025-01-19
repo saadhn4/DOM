@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title" class="main message">Hello</h1>
+
+    <script>
+      let title = document.getElementById("title");
+      // adding new class(es)
+      title.classList.add("new", "new2");
+      // removing class
+      title.classList.remove("new2", "new");
+      // replacing class
+      title.classList.replace("main", "lead");
+      // check if class list available or nah
+      console.log(title.classList.contains("lead"));
+      //  toggle (removes) if the value is not an existing class then it will add it
+      title.classList.toggle("message");
+      console.log(title);
+      console.log(title.classList);
+    </script>
+  </body>
+</html>
